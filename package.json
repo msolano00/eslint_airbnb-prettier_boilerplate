@@ -4,6 +4,12 @@
   "description": "Simple ESlint configuration using Airbnb standards + Prettier.",
   "main": "index.js",
   "scripts": {
+    "build": "npm run clean && mkdir dist && ./node_modules/@babel/cli/bin/babel.js ./src -s -d ./dist",
+    "clean": "rm -rf dist",
+    "dev": "nodemon --exec babel-node ./bin/dev",
+    "lint": "./node_modules/eslint/bin/eslint.js --fix ./src --ext .js",
+    "production": "npm run build && node bin/prod",
+    "start": "node bin/dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,5 +29,19 @@
     "url": "https://github.com/msolano00/eslint_airbnb-prettier_boilerplate/issues"
   },
   "homepage": "https://github.com/msolano00/eslint_airbnb-prettier_boilerplate#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.44",
+    "@babel/core": "^7.0.0-beta.44",
+    "@babel/node": "^7.0.0-beta.44",
+    "@babel/preset-env": "^7.0.0-beta.44",
+    "@babel/register": "^7.0.0-beta.44",
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "nodemon": "^1.17.3",
+    "prettier": "^1.12.1"
+  }
 }
