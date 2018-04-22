@@ -1,0 +1,27 @@
+{
+  "name": "eslint_airbnb-prettier_boilerplate",
+  "version": "1.0.0",
+  "description": "Simple ESlint configuration using Airbnb standards + Prettier.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msolano00/eslint_airbnb-prettier_boilerplate.git"
+  },
+  "keywords": [
+    "ESlint",
+    "airbnb",
+    "standards",
+    "prettier",
+    "boilerplate"
+  ],
+  "author": "Marvin Solano <msolano00>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msolano00/eslint_airbnb-prettier_boilerplate/issues"
+  },
+  "homepage": "https://github.com/msolano00/eslint_airbnb-prettier_boilerplate#readme",
+  "devDependencies": {}
+}
